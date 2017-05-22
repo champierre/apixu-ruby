@@ -38,5 +38,9 @@ module Apixu
     def forecast query, days=1
       request :forecast, q: query, days: days
     end
+
+    def history query, dt = '2015-01-01'
+      request :history, q: query, dt: dt
+    end
   end
 end
